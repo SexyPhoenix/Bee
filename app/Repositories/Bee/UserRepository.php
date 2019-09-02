@@ -103,9 +103,8 @@ class UserRepository {
 
     public static function getUserByDept($depts)
     {   
-        return User::select('employee_id as user_id')
+        return User::select('id as user_id')
             ->whereIn('dept_id', $depts)
-            ->OnDuty()
             ->get()
             ->pluck('user_id')
             ->toArray();

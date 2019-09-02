@@ -1,5 +1,5 @@
 <template>
-  <div class="row" v-if="depts.length">
+  <div class="row">
     <p style="margin-left: 15px;">搜索具体员工考勤请勿勾选部门</p>
     <el-tree
       :data="depts"
@@ -38,7 +38,7 @@ export default {
   },
   computed: {
     ...mapState({
-      depts: state => state.user.filterDept,
+      depts: state => state.user.filterDept.data,
     }),  
   },
   methods: {

@@ -17,11 +17,11 @@ Bee 是人力资源系统中的考勤应用，主要功能用于员工申请假�
 ###### 2. 申请
 ![image](https://raw.githubusercontent.com/SexyPhoenix/Bee/master/uploads/guide/apply.gif)
 ###### 3. 编辑
-![image](https://github.com/SexyPhoenix/Bee/blob/master/uploads/guide/apply.gif)
+![image](https://raw.githubusercontent.com/SexyPhoenix/Bee/master/uploads/guide/edit.gif)
 ###### 4. 审批
 ![approval.gif](https://raw.githubusercontent.com/SexyPhoenix/Bee/master/uploads/guide/approval.gif)
 ###### 5. 搜索
-![search.gif](https://github.com/SexyPhoenix/Bee/blob/master/uploads/guide/search.gif)
+![search.gif](https://raw.githubusercontent.com/SexyPhoenix/Bee/master/uploads/guide/search.gif)
 
 #### 安装
 ***

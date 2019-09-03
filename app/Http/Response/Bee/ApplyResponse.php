@@ -4,7 +4,7 @@
  * @Author: Sexy Phoenix
  * @Date:   2019-06-11 09:31:28
  * @Last Modified by:   Sexy Phoenix
- * @Last Modified time: 2019-08-31 15:43:36
+ * @Last Modified time: 2019-09-03 09:25:55
  */
 namespace App\Http\Response\Bee;
 
@@ -136,7 +136,7 @@ class ApplyResponse
 
                 $year_month  = str_replace('-', '', mb_substr($apply_date, 0, 7));
 
-                $attach      = $item['attach'] ? $upload_url.'/'.$item['attach'] : '';
+                //$attach      = $item['attach'] ? $upload_url.'/'.$item['attach'] : '';
                 $_flows      = isset($flows[$id]) ? $flows[$id] : [];
                 $_item       = [
 		            'id'           => $id,
@@ -152,7 +152,7 @@ class ApplyResponse
                     'handover'     => $item['handover'] ? $item['handover'] : '',
                     'handovers'    => $handovers,
                     'peers'        => $peers,
-                    'attach'       => $attach,
+                    'attach'       => $item['attach'],
 		            'flows'        => $_flows,
 		            'parent_id'    => $item['parent_id'],
                     'meta'         => $meta,

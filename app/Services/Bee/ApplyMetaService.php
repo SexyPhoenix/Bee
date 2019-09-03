@@ -42,7 +42,7 @@ class ApplyMetaService
         $this->user     = $user;
         $this->operator = $operator;
 
-    //$this->beforeProcess();
+        $this->beforeProcess();
 
         $this->process();
         

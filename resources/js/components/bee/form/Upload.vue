@@ -7,8 +7,10 @@
       :multiple="false"
       :headers="headers"
       :on-remove="handleRemove"
+      :on-preview="handlePreview"
       :before-remove="beforeRemove"
-      :http-request="handleUpload"     
+      :http-request="handleUpload"
+      :file-list="preview"  
     >
       <el-button size="small" type="primary">点击上传</el-button>
       <!-- <div slot="tip" class="el-upload__tip">上传数量不超过1个</div> -->
@@ -30,6 +32,7 @@ export default {
     return {
       attach: this.value,
       action: $C.API_UPLOAD,
+      preview: [],
       headers: {
         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
       }
@@ -38,6 +41,10 @@ export default {
   watch: {
     value : function(newValue, oldValue) {
       this.attach = newValue
+      if(newValue) {
+
+        this.preview = [{name: newValue, url: $C.UPLOAD_URL + '/' + newValue}]
+      }
     }
   },
   methods: {
@@ -70,6 +77,10 @@ export default {
             return false           
           }
       })
+    },
+    handlePreview(file) {
+
+      window.open(file.url)
     }
   }
 }

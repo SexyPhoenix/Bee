@@ -225,7 +225,7 @@ export default {
       if(row.children) {
   
         row.children.forEach(item => {
-          this.$refs.flowTable.toggleRowSelection(item);
+          this.$refs.flowTable.toggleRowSelection(item)
         });
       }
 

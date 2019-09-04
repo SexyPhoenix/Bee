@@ -32,13 +32,13 @@ git clone git@github.com:SexyPhoenix/Bee.git
 ###### 2. Laravel
 ```
 composer install
-chmod -R 777 storage
+chmod -R 777 storage //测试环境设置
 php artisan key:generate
 ```
 ###### 3. 上传文件夹
 ```
 mkdir -p uploads/bee
-chmod -R 777 uploads
+chmod -R 777 uploads //测试环境设置
 ```
 ###### 4. 配置.env
 ```

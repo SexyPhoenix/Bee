@@ -4,12 +4,12 @@ Bee 是人力资源系统中的考勤应用，主要功能用于员工申请假�
 
 #### 技术栈
 ***
-- 服务器：Linux（Centos 7）、Nginx
-- 前端：Element、Vue、Vue-Router、Vuex、Webpack、V-calendar
-- 资源：Elephant
-- 后端：Laravel
-- 缓存：Redis
-其他的就是一些基本工具了，比如node、npm（cnpm）、composer、git等
+- 服务器：Linux（Centos 7）、Nginx  
+- 前端：Element、Vue、Vue-Router、Vuex、Webpack、V-calendar  
+- 资源：Elephant  
+- 后端：Laravel  
+- 缓存：Redis  
+其他的就是一些基本工具了，比如node、npm（cnpm）、composer、git等  
 
 #### 演示
 ###### 1. 登录
